@@ -1,0 +1,131 @@
+    *{
+    box-sizing: border-box;
+    margin: 0px;
+    background-color: #EEE;
+}
+:root{
+    --mainColor: rgb(249 15 115 / 54%);
+    --secondColor:#4d4d77 ;
+}
+body{
+    width: 100%;
+    
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background: linear-gradient(to right, rgba(249, 15, 115, 0.2), rgba(77, 77, 119, 0.2)),
+            url("./assets/pink_back.jpg");
+    background-size: cover;
+    height: 650px;
+    
+    h1{
+        font-size: 950%;
+    color: #4d4d77 ;
+    font-style: italic;
+    
+    }
+    .p1{
+        position: absolute;
+        top: 15%;
+        left: 3%;
+        background-color: #ffc0cb00
+
+    }
+    .p2{
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        background-color: #ffc0cb00
+    }
+    .pic {
+        position: absolute;
+        left: 65%;
+        background: linear-gradient(var(--mainColor) , var(--secondColor));
+        height: 410px;
+        width: 410px;
+        
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        text-align: center;
+        .my-pic{
+                height: 400px;
+                margin: 5px;            
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+    }
+    }
+    .para{
+        background-color: transparent;    
+        font-size: 30px;
+        position: absolute;        
+        top: 70%;
+        color: var(--secondColor);
+        font-weight: bold;
+    }
+} 
+
+@media (max-width: 1107px){
+    .head h1{
+        font-size: 750%;
+    }
+    .head .pic {
+        height: 350px;
+        width: 350px;
+        .my-pic{
+            height: 340px;
+            width: 340px;
+        }
+    }
+
+}
+@media (max-width: 900px ){
+    .head h1{
+        font-size: 550%;
+    }
+    .head .pic {
+        height: 250px;
+        width: 250px;
+        .my-pic{
+            height: 240px;
+            width: 240px;
+        }
+    }
+}
+@media (max-width: 680px ){
+    
+    .head h1{
+        font-size: 350%;
+    }
+    .head .pic {
+        height: 150px;
+        width: 150px;
+        position: relative;        
+        .my-pic{
+            position: absolute;            
+            height: 140px;
+            width: 140px;
+        }
+        
+    }
+    .head .p1{
+        top: 15%;
+    }
+    .head .p2{
+        top: 25%;
+    }
+    .head .para{
+        top: 40%;
+        
+    }
+}
