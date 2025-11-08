@@ -11,7 +11,7 @@
 
     body {
     background-color: #eee;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     }
 
     .head {
@@ -116,4 +116,33 @@
         height: 170px;
         width: 170px;
     }
+    }
+
+    .info{
+    justify-content: center;
+    direction: rtl;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+    .info h2{
+        font-size: 34px;
+        color: var(--mainColor);
+    }
+    .info .card{
+        background-color: #ffc0cb63;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        text-align: center;
+        line-height: 2;
+        color: var(--secondColor);
+}
+ul li{
+        list-style: none;
+        font-size: 22px;
+}
+.card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 14px rgba(0,0,0,0.15);
     }
