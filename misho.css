@@ -7,6 +7,7 @@
     :root {
     --mainColor: rgb(249 15 115 / 54%);
     --secondColor: #4d4d77;
+    --logoColor: #ffe6e9;
     }
 
     body {
@@ -145,76 +146,13 @@ ul li{
         list-style: none;
         font-size: 22px;
 }
-.card:hover {
+.card:hover 
+,.product img:hover
+{
         transform: translateY(-5px);
         box-shadow: 0 4px 14px rgba(0,0,0,0.15);
     }
 
-
-.place-photo {
-        position: relative;
-        width: 100%; 
-        max-width: 100%;
-        height: 80vh; 
-        overflow: hidden;
-        border-radius: 0; 
-        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-    }
-h2{
-        font-size: 34px;
-        color: var(--mainColor);
-            direction: rtl;
-            margin: 30px;
-}
-    .place-photo img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: none;
-        transition: opacity 0.5s ease-in-out;
-        border-radius: 15px;
-    }
-
-    .place-photo img.active {
-        display: block;
-    }
-
-    .arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.4);
-        color: #fff;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-        padding: 8px 14px;
-        border-radius: 50%;
-        transition: 0.3s;
-    }
-
-    .arrow:hover {
-        background-color: rgba(0, 0, 0, 0.7);
-    }
-
-    .arrow.left {
-        right: 10px;
-    }
-
-    .arrow.right {
-        left: 10px;
-    }
- /*  استجابة للموبايل */
-    @media (max-width: 768px) {
-        .place-photo {
-            height: 50vh;
-        }
-
-        .arrow {
-            font-size: 26px;
-            padding: 8px 12px;
-        }
-    }
 
 .product{
 display: flex;
@@ -231,10 +169,16 @@ justify-content: center;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+h2{
+        font-size: 34px;
+        color: var(--mainColor);
+            direction: rtl;
+            margin: 30px;
+}
 
 footer{
     width: 100%;    
-    background-color:  #ffc0cb63;
+    background-color: var(--logoColor);
     color: var(--secondColor);
     display: flex;
     justify-content: center;
