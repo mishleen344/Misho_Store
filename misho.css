@@ -74,8 +74,8 @@
     }
 
     .my-pic {
-    height: 340px;
-    width: 340px;
+    height: 350px;
+    width: 350px;
     border-radius: 50%;
     object-fit: cover;
     }
@@ -175,7 +175,24 @@ h2{
             direction: rtl;
             margin: 30px;
 }
+button{
+    background-color: #ff5fa2;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+button a{
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 600;
 
+}
 footer{
     width: 100%;    
     background-color: var(--logoColor);
